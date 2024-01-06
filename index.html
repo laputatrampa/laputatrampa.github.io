@@ -1,0 +1,25 @@
+
+<meta charset="UTF-8">
+<style>
+     body {
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: blue;
+        text-shadow: 0 0 2.8px red, 0 0 13px darkviolet, 0px 0px 21px whitesmoke;
+        font-family: 'Ravie';
+        font-size: 333px;
+        height: 100vh; /* Set the height to 100% of the viewport height */
+        margin: 0; /* Remove default margin to ensure full height */
+        flex-direction: column;
+    }
+    div {        
+        text-shadow: 0 0 208px red, 0 0 1030px darkviolet, 0px 0px 2000px whitesmoke;
+    }
+</style>
+<marquee direction="down" id="ca3n" style="">3</marquee>
+<script>
+    setInterval( () => document.getElementById('ca3n').innerHTML = Math.round(Math.random()*4208), 150)
+</script>
+<div>🕳️</div>
