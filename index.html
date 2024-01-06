@@ -14,12 +14,15 @@
         margin: 0; /* Remove default margin to ensure full height */
         flex-direction: column;
     }
-    div {        
+    div {      
+        z-index: 333333;  
+        margin: -35vh 0 0 0;
         text-shadow: 0 0 208px red, 0 0 1030px darkviolet, 0px 0px 2000px whitesmoke;
     }
 </style>
-<marquee direction="down" id="ca3n" style="">3</marquee>
+<marquee direction="down" id="ca3n" style="z-index:3;" >3</marquee>
 <script>
     setInterval( () => document.getElementById('ca3n').innerHTML = Math.round(Math.random()*4208), 150)
+    setInterval( () => document.getElementById('tabajo').innerHTML="🕳️"+String.fromCodePoint(document.getElementById('ca3n').innerHTML), 150)
 </script>
-<div>🕳️</div>
+<div id="tabajo">🕳️</div>
